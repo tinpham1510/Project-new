@@ -8,7 +8,7 @@ var debug = require('debug')('cnpmcsapi:server');
 var http = require('http');
 global.XMLHttpRequest = require('xhr2');
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://unruffled-boyd-53cbf1.netlify.app/',
   credentials: true,            //access-control-allow-credentials:true
   optionSuccessStatus: 200
 }
