@@ -18,7 +18,7 @@ var apiRouter = require('./routes/api');
 require('dotenv').config();
 
 var app = express();
-let PORT = process.env.PORT || 3001
+let PORT = process.env.PORT || 3000
 app.listen(PORT, ()=>{
   console.log("Server is running")
 });
