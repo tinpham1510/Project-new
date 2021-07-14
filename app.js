@@ -8,7 +8,7 @@ var debug = require('debug')('cnpmcsapi:server');
 var http = require('http');
 global.XMLHttpRequest = require('xhr2');
 const corsOptions = {
-  origin: 'https://kind-allen-9f733a.netlify.app',
+  origin: 'https://it-store-app.netlify.app',
   credentials: true,            //access-control-allow-credentials:true
   optionSuccessStatus: 200
 }
