@@ -12,7 +12,7 @@ const swaggerOptions = {
                 name: '',
                 url: ''
             },
-            servers: ["http://localhost:3001"]
+            servers: ["https://deploy-server-123.herokuapp.com/"]
         }
     },
     apis: [appRoot.path + "/routes/api/*.js"]
