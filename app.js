@@ -4,6 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
+var debug = require('debug')('cnpmcsapi:server');
+var http = require('http');
+global.XMLHttpRequest = require('xhr2');
 const corsOptions = {
   origin: 'http://localhost:3000',
   credentials: true,            //access-control-allow-credentials:true
