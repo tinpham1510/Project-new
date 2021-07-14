@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
 const corsOptions = {
-  origin: 'http://localhost:8000',
+  origin: 'http://localhost:3000',
   credentials: true,            //access-control-allow-credentials:true
   optionSuccessStatus: 200
 }
@@ -18,7 +18,7 @@ var apiRouter = require('./routes/api');
 require('dotenv').config();
 
 var app = express();
-let PORT = process.env.PORT || 3000
+let PORT = process.env.PORT || 3001
 app.listen(PORT, ()=>{
   console.log("Server is running")
 });
