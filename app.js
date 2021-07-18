@@ -21,6 +21,10 @@ var apiRouter = require('./routes/api');
 require('dotenv').config();
 
 var app = express();
+const PORT = env.process.PORT || 3001
+app.listen(PORT,()=>{
+  console.log("Server " + PORT + " is running")
+})
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -28,6 +32,7 @@ app.use(function (req, res, next) {
   //res.header('Access-Control-Allow-Methods', ' PUT, POST, GET, DELETE, OPTIONS');
   next();
 });
+
 app.use(cors(corsOptions));
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 
